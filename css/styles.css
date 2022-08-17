@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-
 .main {
     background-color: #ccc;
     display: flex;
@@ -24,7 +23,7 @@
 .title {
     width: 100vw;
     height: 10%;
-    line-height: 10vh;
+    /* line-height: 10vh; */
     position: fixed;
     top: 0;
 }
@@ -71,11 +70,11 @@
     opacity: .5;
 }
 
-.left:hover + .right + .imagens {
+.left:hover + .right ~ .imagens {
     transform: translate(-100%);    
 }
 
-.right:hover + .imagens {
+.right:hover ~ .imagens {
     transform: translate(100%);    
     transition: 5s;
 }
